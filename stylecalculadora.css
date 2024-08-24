@@ -1,0 +1,43 @@
+#Cuerpo{
+	color: white;
+	background:#00bfff;
+}
+#title {
+	padding: 10px;
+	display: inline-block;
+	margin: 0% 0% 0% 35%;
+	color: #f03;
+	border: 5px #1f5cc5 solid;
+	background:#00c5e4;
+	color: black
+}
+
+section {
+ display: inline-block;
+}
+.calibrantes{
+	width: 300px;
+	background:#00bfff;
+	color: #8B0000;
+	border: 5px black solid;
+	margin :3px;
+	padding: 10px;
+	display: inline-block;
+}
+button{
+	font-size: 15px;
+	margin :0.5px;
+	background:#000;
+	color :#fff;
+	cursor: pointer;
+	transition:.5s;
+}
+button:hover{
+	background:#999;
+}
+#lista{
+	font-size: 15px
+}
+.listacontenedor {
+	width: 500px;
+}

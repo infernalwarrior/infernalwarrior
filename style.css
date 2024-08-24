@@ -1,0 +1,47 @@
+#Cuerpo{
+	color: white;
+	background:#00bfff;
+}
+#title {
+	padding: 10px;
+	display: inline-block;
+	margin: 0% 0% 0% 34%;
+	color: #f03;
+	border: 5px #1f5cc5 solid;
+	background:#00c5e4;
+	color: black
+}
+#centro{
+	margin: 50%
+}
+.imagenDeArticulo{
+	margin:0px 25px;
+	width: 90% ;
+	height: 10%
+}
+.Articulo{
+	border: 5px #4033d3 solid;
+	border-radius: 5px
+	display: block;
+	margin: 1% 31%;
+	background:#09cbc8;
+	color: black;
+	width: 40%
+
+}
+.articleTitle{
+	margin: 5px
+}
+.margen{
+	margin: 10px
+}
+.description{
+	margin-left: 10px;
+	font-size: 20px
+}
+
+.sinTerminal{
+	display: none;
+}
+
+/*{}*/

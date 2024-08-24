@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="John Doe">
+	<title>Calculadora compleja</title>
+	<link rel="stylesheet" type="text/css" href="navegacion.css">
+	<link rel="stylesheet" type="text/css" href="stylecalculadora.css">
+</head>
+<body id="Cuerpo">
+	<header>
+	<h1 id="title">Calculadora Compleja</h1>
+	<nav id="navegacion">
+		<a class="navegador" href="index.html">Inicio</a>
+		<a class="navegador" href="calculadora.html">calculadora simple</a>
+	</nav>
+	</header>
+	<section id="contenedor">
+		<article class="calibrantes">	
+			<h2>Resistencia</h2>
+			<p id="resistencia">La resistencia es de 0 ohmios</p>
+			<button onclick="BotonesDeResistencia(subir,1)">Subir 1 ohm</button>
+			<button onclick="BotonesDeResistencia(subir,5)">Subir 5 ohm</button>
+			<button onclick="BotonesDeResistencia(subir,10)">Subir 10 ohm</button>
+			<button onclick="BotonesDeResistencia(subir,100)">Subir 100 ohm</button>
+			<button onclick="BotonesDeResistencia(bajar,1)">Bajar 1 ohm</button> 
+			<button onclick="BotonesDeResistencia(bajar,5)">bajar 5 ohm</button>
+			<button onclick="BotonesDeResistencia(bajar,10)">bajar 10 ohm</button>
+			<button onclick="BotonesDeResistencia(bajar,100)">bajar 100 ohm</button><br>
+			<button onclick="BotonesDeResistencia(reiniciar)">reiniciar</button>
+		</article>
+		<article class="calibrantes">
+			<h2>Voltaje</h2>
+			<p id="voltaje">El voltaje es de 0 voltios</p>
+			<button onclick="BotonesDeVoltaje(subir,1)">Subir 1 voltio</button>
+			<button onclick="BotonesDeVoltaje(subir,5)">Subir 5 voltio</button>
+			<button onclick="BotonesDeVoltaje(subir,10)">Subir 10 voltio</button>
+			<button onclick="BotonesDeVoltaje(subir,100)">Subir 100 voltio</button>
+			<button onclick="BotonesDeVoltaje(bajar,1)">Bajar 1 voltio</button>
+			<button onclick="BotonesDeVoltaje(bajar,5)">Bajar 5 voltio</button>
+			<button onclick="BotonesDeVoltaje(bajar,10)">Bajar 10 voltio</button>
+			<button onclick="BotonesDeVoltaje(bajar,100)">Bajar 100 voltio</button>
+			<button onclick="BotonesDeVoltaje(reiniciar)">reiniciar</button>
+		</article>
+		<article class="calibrantes">
+			<h2>Intencidad o Corriente</h2>
+			<p id="Intensidad">La intensidad es de 0 amperios</p>
+			<button onclick="BotonesDeIntensidad(subir,1)">Subir 1 amperio</button>
+			<button onclick="BotonesDeIntensidad(subir,5)">Subir 5 amperio</button>
+			<button onclick="BotonesDeIntensidad(subir,10)">Subir 10 amperio</button>
+			<button onclick="BotonesDeIntensidad(subir,100)">Subir 100 amperio</button>
+			<button onclick="BotonesDeIntensidad(bajar,1)">Bajar 1 amperio</button>
+			<button onclick="BotonesDeIntensidad(bajar,5)">Bajar 5 amperio</button>
+			<button onclick="BotonesDeIntensidad(bajar,10)">Bajar 10 amperio</button>
+			<button onclick="BotonesDeIntensidad(bajar,100)">Bajar 100 amperio</button>
+			<button onclick="BotonesDeIntensidad(reiniciar)">reiniciar</button>
+		</article>
+		<article class="calibrantes">
+			<h2>Potencia electrica</h2>
+			<p id="watts">La potencia electrica es de 0 watts</p>
+			<button onclick="BotonesDePotencia(subir,1)">Subir  1 watts</button>
+			<button onclick="BotonesDePotencia(subir,5)">Subir 5 watts</button>
+			<button onclick="BotonesDePotencia(subir,10)">Subir 10 watts</button>
+			<button onclick="BotonesDePotencia(subir,100)">Subir 100 watts</button>
+			<button onclick="BotonesDePotencia(bajar,1)">Bajar 1 watts</button>
+			<button onclick="BotonesDePotencia(bajar,5)">Bajar 5 watts</button>
+			<button onclick="BotonesDePotencia(bajar,10)">Bajar 10 watts</button>
+			<button onclick="BotonesDePotencia(bajar,100)">Bajar 100 watts</button>
+			<button onclick="BotonesDePotencia(reiniciar)">reiniciar</button>
+		</article>
+		<article class="calibrantes">
+			<h2>Bobina</h2>
+			<p id="Bobina">El embobinado es de 0 henrio</p>
+			<button onclick="BotonesDeBobina(subir,1)">subir 1 henrio</button>
+			<button onclick="BotonesDeBobina(subir,5)">subir 5 henrio</button>
+			<button onclick="BotonesDeBobina(subir,10)">subir 10 henrio</button>
+			<button onclick="BotonesDeBobina(subir,100)">subir 100 henrio</button>
+			<button onclick="BotonesDeBobina(bajar,1)">Bajar 1 henrio</button>
+			<button onclick="BotonesDeBobina(bajar,5)">Bajar 5 henrio</button>
+			<button onclick="BotonesDeBobina(bajar,10)">Bajar 10 henrio</button>
+			<button onclick="BotonesDeBobina(bajar,100)">Bajar 100 henrio</button>
+			<button onclick="BotonesDeBobina(reiniciar)">reiniciar</button>	
+		</article>
+		<article class="calibrantes">
+			<h2>capacitancia</h2>
+			<p id="capacitancia">La capacitancia es de 0 Farad</p>
+			<button onclick="BotonesDeCapacitancia(subir,1)">subir 1 uf</button>
+			<button onclick="BotonesDeCapacitancia(subir,5)">subir 5 uf</button><br>
+			<button onclick="BotonesDeCapacitancia(subir,10)">subir 10 uf</button>
+			<button onclick="BotonesDeCapacitancia(subir,100)">subir 100 uf</button><br>
+			<button onclick="BotonesDeCapacitancia(bajar,1)">bajar 1 uf</button>
+			<button onclick="BotonesDeCapacitancia(bajar,5)">bajar 5 uf</button><br>
+			<button onclick="BotonesDeCapacitancia(bajar,10)">bajar 10 uf</button>
+			<button onclick="BotonesDeCapacitancia(bajar,100)">bajar 100 uf</button><br>
+			<button onclick="BotonesDeCapacitancia(reiniciar)">reiniciar</button>
+
+		</article>
+		<article class="calibrantes">
+			<h2>Frecuencia</h2>
+			<p id="frecuencia">La frecuencia es de 0 hz</p>
+			<button onclick="BotonesDeFrecuencia(subir,1)">subir 1 hz</button>
+			<button onclick="BotonesDeFrecuencia(subir,5)">subir 5 hz</button> <br>
+			<button onclick="BotonesDeFrecuencia(subir,10)">subir 10 hz</button>
+			<button onclick="BotonesDeFrecuencia(subir,100)">subir 100 hz</button> <br>
+			<button onclick="BotonesDeFrecuencia(bajar,1)">bajar 1 hz</button>
+			<button onclick="BotonesDeFrecuencia(bajar,5)">bajar 5 hz</button> <br>
+			<button onclick="BotonesDeFrecuencia(bajar,10)">bajar 10 hz</button>
+			<button onclick="BotonesDeFrecuencia(bajar,100)">bajar 100 hz</button> <br>
+			<button onclick="BotonesDeFrecuencia(reiniciar)">reiniciar</button>
+		</article>
+		<article class="calibrantes listacontenedor">
+			<h2>Calcular Parametros</h2>
+			<button onclick="Reiniciar()">Reiniciar todo</button>
+			<button onclick="calcularResistenciaReal()">Calcular Resistencia real</button>
+			<button onclick="calcularParametrosBasicos()">Calcular Parametros Basicos</button>
+		<ul id="lista">
+			
+			<li id="numeroDeVoltaje">El voltaje es de 0 voltios</li>
+			<li id="numeroDeIntencidad">La intensidad es de 0 amperios</li>
+			<li id="numeroDeResistencia">La resistencia es de 0 ohmios</li>
+			<li id="numeroDePotencia">La potencia electrica es de 0 watts</li>
+			<li id="numeroDeBoBina">El embobinado es de 0 henrio</li>
+			<li id="numeroDeCapacitancia">La capacitancia es de 0 farad</li>
+			<li id="numeroDeFrencuencia">La frecuencia es de 0 hz</li>
+			<li id="numeroDeInductanciaCapacitiva">La Inductancia de capacitancia es de 0 ohmio</li>
+			<li id="numeroDeInductanciaEmbobina">La Inductancia de bobina es de 0 ohmio</li>
+			<li id="numeroDeResistenciaZ"></li>
+			<li></li>
+		</ul>
+		</article>
+	</section>
+	<section>
+		<article id="procedimiento">
+	w3dsdddc nfvftgg		<p></p>
+		</article>
+	</section>
+	<script type="text/javascript" src="cal_main.js"></script>
+	<script type="text/javascript" src="complexsyster.js"></script>
+	</body>
+</html>

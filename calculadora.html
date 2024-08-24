@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="John Doe">
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="navegacion.css">
+	<link rel="stylesheet" type="text/css" href="stylecalculadora.css">
+</head>
+<body id="Cuerpo">
+	<header>
+	<h1 id="title">calculadora</h1>
+	<nav id="navegacion">
+		<a class="navegador" href="index.html">Inicio</a>
+		<a class="navegador" href="calculadoracompleja.html">calculadora compleja</a>
+	</nav>
+	</header>
+	<section id="contenedor">
+		<article class="calibrantes">	
+			<h2>Resistencia</h2>
+			<p id="resistencia">La resistencia es de 0 ohmios</p>
+			<button onclick="BotonesDeResistencia(subir,1)">Subir 1 ohm</button>
+			<button onclick="BotonesDeResistencia(subir,5)">Subir 5 ohm</button>
+			<button onclick="BotonesDeResistencia(subir,10)">Subir 10 ohm</button>
+			<button onclick="BotonesDeResistencia(subir,100)">Subir 100 ohm</button>
+			<button onclick="BotonesDeResistencia(bajar,1)">Bajar 1 ohm</button> 
+			<button onclick="BotonesDeResistencia(bajar,5)">bajar 5 ohm</button>
+			<button onclick="BotonesDeResistencia(bajar,10)">bajar 10 ohm</button>
+			<button onclick="BotonesDeResistencia(bajar,100)">bajar 100 ohm</button>
+			<button onclick="BotonesDeResistencia(reiniciar)">reiniciar</button>
+			
+		</article>
+		<article class="calibrantes">
+			<h2>Voltaje</h2>
+			<p id="voltaje">El voltaje es de 0 voltios</p>
+			<button onclick="BotonesDeVoltaje(subir,1)">Subir 1 voltio</button>
+			<button onclick="BotonesDeVoltaje(subir,5)">Subir 5 voltio</button>
+			<button onclick="BotonesDeVoltaje(subir,10)">Subir 10 voltio</button>
+			<button onclick="BotonesDeVoltaje(subir,100)">Subir 100 voltio</button>
+			<button onclick="BotonesDeVoltaje(bajar,1)">Bajar 1 voltio</button>
+			<button onclick="BotonesDeVoltaje(bajar,5)">Bajar 5 voltio</button>
+			<button onclick="BotonesDeVoltaje(bajar,10)">Bajar 10 voltio</button>
+			<button onclick="BotonesDeVoltaje(bajar,100)">Bajar 100 voltio</button>
+			<button onclick="BotonesDeVoltaje(reiniciar)">reiniciar</button>
+		</article>
+		<article class="calibrantes">
+			<h2>Intencidad o Corriente</h2>
+			<p id="Intensidad">La intensidad es de 0 amperios</p>
+			<button onclick="BotonesDeIntensidad(subir,1)">Subir 1 amperio</button>
+			<button onclick="BotonesDeIntensidad(subir,5)">Subir 5 amperio</button>
+			<button onclick="BotonesDeIntensidad(subir,10)">Subir 10 amperio</button>
+			<button onclick="BotonesDeIntensidad(subir,100)">Subir 100 amperio</button>
+			<button onclick="BotonesDeIntensidad(bajar,1)">Bajar 1 amperio</button>
+			<button onclick="BotonesDeIntensidad(bajar,5)">Bajar 5 amperio</button>
+			<button onclick="BotonesDeIntensidad(bajar,10)">Bajar 10 amperio</button>
+			<button onclick="BotonesDeIntensidad(bajar,100)">Bajar 100 amperio</button>
+			<button onclick="BotonesDeIntensidad(reiniciar)">reiniciar</button>
+		</article>
+		<article class="calibrantes">
+			<h2>Potencia electrica</h2>
+			<p id="watts">La potencia electrica es de 0 watts</p>
+			<button onclick="BotonesDePotencia(subir,1)">Subir 1 watts</button>
+			<button onclick="BotonesDePotencia(subir,5)">Subir 5 watts</button>
+			<button onclick="BotonesDePotencia(subir,10)">Subir 10 watts</button>
+			<button onclick="BotonesDePotencia(subir,100)">Subir 100 watts</button>
+			<button onclick="BotonesDePotencia(bajar,1)">Bajar 1 watts</button>
+			<button onclick="BotonesDePotencia(bajar,5)">Bajar 5 watts</button>
+			<button onclick="BotonesDePotencia(bajar,10)">Bajar 10 watts</button>
+			<button onclick="BotonesDePotencia(bajar,100)">Bajar 100 watts</button>
+			<button onclick="BotonesDePotencia(reiniciar)">reiniciar</button>
+		</article>
+
+		<article class="calibrantes">
+			<h2>Encontrar parametros</h2>
+			<button onclick="reiniciarTodo()" id="reinicio">reiniciar todo</button>
+			<p id="encontrarParametro">Elija que parametro quiere encontrar</p>
+			<button onclick="encontrarParametro(0)">Resistencia</button>
+			<button onclick="encontrarParametro(1)">Voltaje</button>
+			<button onclick="encontrarParametro(2)">Intensidad</button>
+			<button onclick="encontrarParametro(3)">Potencia electrica</button>
+			<button onclick="encontrarParametro(4)">Voltaje (con watts e intencidad</button>
+			<button onclick="encontrarParametro(5)">Intensidad (con watts y voltaje)</button>
+		</article>
+		<article class="calibrantes">
+		<h2>Encontrar todo los parametros con 2</h2>
+			<button onclick="autoCompletar (0)">Resistencia e intencidad</button>
+			<button onclick="autoCompletar (1)">Resistencia y voltaje</button>
+			<button onclick="autoCompletar (2)">Voltaje e intencidad</button>
+			<button onclick="autoCompletar (3)">Potencia e intencidad</button>
+			<button onclick="autoCompletar (4)">Potencia y voltaje</button>
+			<ul>
+				<li id="numeroDeVoltaje">El voltaje es de 0 voltios</li>
+				<li id="numeroDeIntencidad">La intensidad es de 0 amperios</li>
+				<li id="numeroDeResistencia">La resistencia es de 0 ohmios</li>
+				<li id="numeroDePotencia">La potencia electrica es de 0 watts</li>
+			</ul>
+		</article>
+	</section>
+<script type="text/javascript" src="cal_main.js"></script>
+</body>
+</html>
